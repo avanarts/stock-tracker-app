@@ -1,9 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import uuid from 'react-uuid'
 import Card from './Card'
-import { makeConsoleLogger } from '@notionhq/client/build/src/logging'
-
-
 
 
 
@@ -12,8 +9,6 @@ export default function Dashboard() {
     //stored cards can be fed into cards
     const [cards, setCards] = useState([])
     const [stockData, setStockData] = useState([])
-//    const [ticker, setTicker] = useState('') //do i need this?
-//    const [id, setId] = useState(1)
     const [active, setActive] = useState(false)
 
 
@@ -86,7 +81,7 @@ export default function Dashboard() {
 
     function createCard() {
         const newId = uuid()
-//        setId(newId)
+
 
         const newCard = { 
             id: newId, 
@@ -140,7 +135,7 @@ export default function Dashboard() {
                     ticker: JSON.parse(localStorage.getItem(key))
                 }))
 
-            //setStoredCards(localStorageCards)
+
 
             const previousCards = localStorageCards.map(card => ({
                 id: card.id, 

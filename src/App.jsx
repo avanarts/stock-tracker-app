@@ -7,15 +7,6 @@ import Sidebar from './components/Sidebar.jsx'
 
 function App() {
 
-/*
-    <div className='container'>
-      <Sidebar />
-      <Routes>
-        <Route path="/" element={ <Dashboard /> } />
-        <Route path="about" element={ <About /> } />
-      </Routes>
-    </div>
-*/
 
   return (
     <>
